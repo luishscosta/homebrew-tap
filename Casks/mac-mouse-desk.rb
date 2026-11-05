@@ -1,6 +1,6 @@
 cask "mac-mouse-desk" do
-  version "0.1.0"
-  sha256 "f35bc3d5ea89da62a82c8d41b14cd646db171d3a1e720abe7f8949d729cc935c"
+  version "0.1.1"
+  sha256 "55b155cdde9cd4e6ea55d9520f50c1bfcb70582a2ab0c0be334b6e47fdc006ca"
 
   url "https://github.com/luishscosta/mac-mouse-desk/releases/download/v#{version}/MacMouseDesk.zip"
   name "Mac Mouse Desk"
@@ -17,8 +17,11 @@ cask "mac-mouse-desk" do
   zap trash: "~/Library/Preferences/local.macos-config.Mesa.plist"
 
   caveats <<~EOS
-    Mac Mouse Desk is not notarized by Apple. On first launch macOS blocks it:
-    open System Settings > Privacy & Security and click "Open Anyway".
+    Mac Mouse Desk is not notarized by Apple, so macOS blocks the first launch.
+    Before opening it (and after each upgrade), remove the quarantine:
+      xattr -dr com.apple.quarantine "/Applications/Mac Mouse Desk.app"
+    Or open it, click OK (not "Move to Trash") and use
+    System Settings > Privacy & Security > Open Anyway.
     Then authorize it under Accessibility to capture the mouse.
   EOS
 end
