@@ -1,6 +1,6 @@
 cask "mac-mouse-desk" do
-  version "0.1.1"
-  sha256 "55b155cdde9cd4e6ea55d9520f50c1bfcb70582a2ab0c0be334b6e47fdc006ca"
+  version "0.1.2"
+  sha256 "aece0e6012feab99618f1983bbc1b0f1a18a8c6ff6531e9c74eaabb3180d7337"
 
   url "https://github.com/luishscosta/mac-mouse-desk/releases/download/v#{version}/MacMouseDesk.zip"
   name "Mac Mouse Desk"
