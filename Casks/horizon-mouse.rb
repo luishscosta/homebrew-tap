@@ -1,6 +1,6 @@
 cask "horizon-mouse" do
-  version "0.3.4"
-  sha256 "a0a776901056fbc140602b14f8d9d498e64d2c717e6578fcf0b3632ad5c47292"
+  version "0.3.5"
+  sha256 "efd35c365b5a7505b7c7d7ab912348fb77a48213d0b9c623fb708e8a1aee25df"
 
   url "https://github.com/luishscosta/horizon-mouse/releases/download/v#{version}/HorizonMouse.zip"
   name "Horizon Mouse"
